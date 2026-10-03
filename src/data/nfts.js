@@ -1,0 +1,58 @@
+const nfts = [
+  {
+    id: 1,
+    image: "/images/nft-1.svg",
+    title: "Cyber Equilibrium",
+    description: "A futuristic artwork exploring balance between technology and nature.",
+    price: "0.041",
+    time: "3 days left",
+    creator: "Alex Morgan",
+  },
+  {
+    id: 2,
+    image: "/images/nft-2.svg",
+    title: "Digital Universe",
+    description: "A colorful journey through a universe made entirely of data.",
+    price: "0.065",
+    time: "5 days left",
+    creator: "Lucas Silva",
+  },
+  {
+    id: 3,
+    image: "/images/nft-3.svg",
+    title: "Neon Future",
+    description: "A neon cityscape inspired by the visual language of cyberpunk.",
+    price: "0.092",
+    time: "2 days left",
+    creator: "Emma Stone",
+  },
+  {
+    id: 4,
+    image: "/images/nft-4.svg",
+    title: "Quantum Vision",
+    description: "An abstract composition inspired by particles and quantum space.",
+    price: "0.078",
+    time: "4 days left",
+    creator: "Daniel Costa",
+  },
+  {
+    id: 5,
+    image: "/images/nft-5.svg",
+    title: "Cosmic Pulse",
+    description: "A vibrant digital world where stars and energy collide.",
+    price: "0.054",
+    time: "6 days left",
+    creator: "Mia Carter",
+  },
+  {
+    id: 6,
+    image: "/images/nft-6.svg",
+    title: "Future Genesis",
+    description: "A futuristic portrait representing the beginning of a new era.",
+    price: "0.113",
+    time: "1 day left",
+    creator: "Noah Lee",
+  },
+];
+
+export default nfts;
