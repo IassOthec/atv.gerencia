@@ -1,31 +1,41 @@
+import React from "react";
 import "./NFTCard.css";
 
-function NFTCard({ image, title, description, price, time, creator, index }) {
+function NFTCard({ nft, animationDelay }) {
   return (
     <article
       className="nft-card animate__animated animate__fadeInUp"
-      style={{ animationDelay: `${index * 90}ms` }}
+      style={{ animationDelay }}
     >
-      <div className="nft-card__image-container">
-        <img className="nft-card__image" src={image} alt={title} />
-        <div className="nft-card__overlay" aria-hidden="true">
-          <span className="nft-card__eye">◉</span>
-          <span>View NFT</span>
+      <div className="nft-card__image-wrapper">
+        <img
+          className="nft-card__image"
+          src={nft.image}
+          alt={nft.title}
+        />
+
+        <div className="nft-card__overlay">
+          <span>View artwork</span>
         </div>
       </div>
 
       <div className="nft-card__content">
-        <h2>{title}</h2>
-        <p className="nft-card__description">{description}</p>
+        <h3>{nft.title}</h3>
+
+        <p className="nft-card__creator">
+          Created by <strong>{nft.creator}</strong>
+        </p>
 
         <div className="nft-card__info">
-          <span className="nft-card__price">♦ {price} ETH</span>
-          <span className="nft-card__time">◷ {time}</span>
-        </div>
+          <div>
+            <span className="nft-card__label">Price</span>
+            <strong className="nft-card__price">{nft.price}</strong>
+          </div>
 
-        <div className="nft-card__creator">
-          <span>Created by</span>
-          <strong>{creator}</strong>
+          <div className="nft-card__time">
+            <span className="nft-card__label">Time left</span>
+            <strong>{nft.daysLeft} days</strong>
+          </div>
         </div>
       </div>
     </article>
